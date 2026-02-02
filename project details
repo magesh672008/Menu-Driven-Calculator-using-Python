@@ -1,0 +1,91 @@
+Name : S.Magesh
+Reg No : 411625104038
+Department : B.E (CSE)
+Subject : Python
+Batch : 5TH Batch
+Mini Project 1: Menu-Driven Calculator using Python
+1. Project Title
+
+Menu-Driven Calculator using Python
+
+2. Problem Statement
+
+To design and implement a menu-driven calculator that performs addition, subtraction, multiplication, division, and exit operations.
+
+3. Objective
+
+• To build a simple calculator using Python
+• To practice menu-driven programming
+• To understand loops, functions, and conditionals
+• To simulate real-life calculator operations
+
+4. Tools Used
+
+• Python 3
+• VS Code / Any IDE
+
+5. Description (Detailed – Without Output)
+
+This project implements a simple menu-driven calculator that allows the user to perform basic arithmetic operations. The program repeatedly displays a menu containing options such as addition, subtraction, multiplication, division, and exit. When the user selects an operation, the program asks for two input numbers and performs the chosen arithmetic calculation.
+
+The calculator uses a continuous loop (while True) to keep the program running until the user chooses the exit option. Conditional statements (if-elif-else) are used to identify the selected operation and execute the corresponding calculation. Additionally, the program includes error handling to prevent invalid operations, such as division by zero. This project demonstrates fundamental Python concepts including loops, conditionals, and interactive user input handling.
+
+6. Algorithm
+
+Display calculator menu
+
+Accept user choice
+
+If the choice is valid, read two numbers
+
+Perform the selected operation
+
+Display the result
+
+Repeat the menu until the exit option is selected
+
+7. Program (Python Code)
+while True:
+    print("----- Menu-Driven Calculator -----")
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Multiplication")
+    print("4. Division")
+    print("5. Exit")
+
+    choice = int(input("Enter your choice: "))
+
+    if choice in [1, 2, 3, 4]:
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+
+        if choice == 1:
+            print("Result =", num1 + num2)
+        elif choice == 2:
+            print("Result =", num1 - num2)
+        elif choice == 3:
+            print("Result =", num1 * num2)
+        elif choice == 4:
+            if num2 != 0:
+                print("Result =", num1 / num2)
+            else:
+                print("Error: Division by zero is not allowed")
+
+    elif choice == 5:
+        print("Thank you for using the calculator")
+        break
+
+    else:
+        print("Invalid choice")
+
+8. Sample Output
+
+(Not included as per your request)
+
+9. Result
+
+The menu-driven calculator successfully performs addition, subtraction, multiplication, and division operations based on the user’s selection and handles invalid inputs effectively.
+
+10. Conclusion
+
+This project demonstrates how Python can be used to create simple interactive applications using loops, conditional statements, and user inputs. It provides a clear understanding of how menu-driven programs work and how arithmetic operations can be implemented in Python.
